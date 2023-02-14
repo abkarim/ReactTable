@@ -1,0 +1,40 @@
+{
+  "name": "react-table",
+  "version": "1.0.0",
+  "description": "Table Component for react",
+  "main": "build/index.js",
+  "scripts": {
+    "tailwindcss:watch": "npx tailwindcss -i ./src/util/input.css -o ./src/util/app.css --watch",
+    "tailwindcss:build": "npx tailwindcss -i ./src/util/input.css -o ./src/util/app.css --minify",
+    "build": "npx babel src --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abkarim/react-table.git"
+  },
+  "keywords": [
+    "react-table",
+    "table-component",
+    "table",
+    "jsx-table",
+    "ajax-table"
+  ],
+  "author": "karim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abkarim/react-table/issues"
+  },
+  "homepage": "https://github.com/abkarim/react-table#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "tailwindcss": "^3.2.6"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
