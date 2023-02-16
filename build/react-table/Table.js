@@ -18,7 +18,7 @@ export default function ReactTable({
   setSearchBy,
   total,
   title,
-  data,
+  data = [],
   emptyMessage = "Sorry, no data found",
   footer = false,
   header = true,

@@ -17,7 +17,7 @@ export default function ReactTable({
   setSearchBy,
   total,
   title,
-  data,
+  data = [],
   emptyMessage = "Sorry, no data found",
   footer = false,
   header = true,
@@ -34,6 +34,7 @@ export default function ReactTable({
         searchBy={searchBy}
         setSearchBy={setSearchBy}
       />
+
       <table {...props} className="w-full">
         {header === true && (
           <thead className="bg-slate-200">
@@ -46,6 +47,7 @@ export default function ReactTable({
             />
           </thead>
         )}
+
         <tbody>
           {data.map((x) => {
             return (
@@ -63,6 +65,7 @@ export default function ReactTable({
               </tr>
             );
           })}
+
           {data.length === 0 && (
             <tr>
               <td className="bg-slate-50 px-2" colSpan={title.length}>
@@ -71,6 +74,7 @@ export default function ReactTable({
             </tr>
           )}
         </tbody>
+
         {footer === true && (
           <tfoot className="bg-slate-200">
             <Title
@@ -83,6 +87,7 @@ export default function ReactTable({
           </tfoot>
         )}
       </table>
+
       <Footer
         total={total}
         itemsPerPage={itemsPerPage}
