@@ -1,4 +1,3 @@
-import "../util/app.css";
 import Footer from "./Footer";
 import Title from "./Title";
 import Header from "./Header";
