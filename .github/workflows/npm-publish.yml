@@ -4,9 +4,7 @@
 name: ✅ Publish
 
 on:
-  push:
-    branches: 
-      - master
+  release:
 
 jobs:
   release:
